@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tokoku. — Toko Online</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#/" class="logo" data-nav="/">tokoku<span class="logo-dot">.</span></a>
+      <div class="search-box">
+        <input id="search-input" type="search" placeholder="Cari produk…" autocomplete="off" />
+      </div>
+      <nav class="topbar-actions">
+        <a href="#/orders" class="btn btn-ghost" data-nav="/orders">Pesanan Saya</a>
+        <a href="#/cart" class="btn btn-ghost cart-btn" data-nav="/cart">
+          Keranjang <span id="cart-badge" class="badge hidden">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer class="footer">
+    <p>tokoku. — toko online demo. Pembayaran disimulasikan, pelacakan pengiriman adalah simulasi GPS demo.</p>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
